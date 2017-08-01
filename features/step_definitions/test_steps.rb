@@ -1,5 +1,3 @@
-require 'selenium-webdriver'
-
 Given(/^the user is crazy$/) do
   pending
 end
