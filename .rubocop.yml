@@ -3,3 +3,6 @@ Metrics/LineLength:
 
 Layout/EndOfLine:
   EnforcedStyle: lf
+
+Style/GlobalVars:
+  Enabled: false

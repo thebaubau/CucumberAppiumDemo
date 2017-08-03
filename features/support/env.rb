@@ -7,8 +7,8 @@ class AppiumWorld
 end
 
 caps = Appium.load_appium_txt file: File.expand_path('../appium.txt', __FILE__)
-Appium::Driver.new(caps)
 
+Appium::Driver.new(caps)
 Appium.promote_appium_methods AppiumWorld
 
 World do
@@ -20,4 +20,6 @@ Before do
   @screen = TestBaseScreen.new(self)
 end
 
-After { $driver.driver_quit }
+After do
+  $driver.driver_quit
+end

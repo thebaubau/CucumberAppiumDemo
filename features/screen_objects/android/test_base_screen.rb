@@ -3,17 +3,17 @@ require 'appium_lib/driver'
 require 'minitest/assertions'
 require 'minitest/autorun'
 
-# Base class for all screen objects (inherits from Appium Driver)
+# Base class for all screen objects
 class TestBaseScreen
-  attr_accessor :screen
+  attr_reader :screen
 
   def initialize(screen)
     @screen = screen
   end
 
   def method_missing(sym, *args, &block)
-    if @screen.respond_to_missing?
-      @screen.send sym, *args, &block
+    if screen.respond_to_missing?
+      screen.send sym, *args, &block
     else
       super
     end
@@ -31,6 +31,7 @@ class TestBaseScreen
     query(type, element).click
   end
 
+  # TODO: Only works for IDs
   def element_exists(type, element)
     elem = query(type, element)
     elem.displayed?
