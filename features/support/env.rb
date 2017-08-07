@@ -6,7 +6,7 @@ require 'rspec/expectations'
 class AppiumWorld
 end
 
-caps = Appium.load_appium_txt file: File.expand_path('../appium.txt', __FILE__)
+caps = Appium.load_appium_txt file: File.expand_path('../screen_objects/android/config/appium.txt', __dir__)
 
 World do
   AppiumWorld.new

@@ -1,7 +1,0 @@
-[caps]
-platformName = "Android"
-deviceName = "Pixel_XL_API_25"
-app = "C:\Workspace\Ruby\CucumberAppiumDemo\features\support\ContactManager.apk"
-
-[appium_lib]
-port = 5555

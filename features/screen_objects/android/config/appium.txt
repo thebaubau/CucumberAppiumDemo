@@ -1,0 +1,4 @@
+[caps]
+platformName = "Android"
+deviceName = "Pixel_XL_API_25"
+app = ".\features\support\ContactManager.apk"
