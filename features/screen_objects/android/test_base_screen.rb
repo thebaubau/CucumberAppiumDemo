@@ -4,23 +4,10 @@ require 'minitest/assertions'
 require 'minitest/autorun'
 
 # Base class for all screen objects
-class TestBaseScreen
-  attr_reader :screen
+class TestBaseScreen < Appium::Driver
 
-  def initialize(screen)
-    @screen = screen
-  end
-
-  def method_missing(sym, *args, &block)
-    if screen.respond_to_missing?
-      screen.send sym, *args, &block
-    else
-      super
-    end
-  end
-
-  def respond_to_missing?
-    true
+  def initialize(*opts)
+    super
   end
 
   def query(type, element)
