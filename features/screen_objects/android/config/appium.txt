@@ -1,4 +1,5 @@
 [caps]
+automationName = "Uiautomator2"
 platformName = "Android"
-deviceName = "Pixel_XL_API_25"
-app = ".\features\support\ContactManager.apk"
+deviceName = "emulator-5554"
+app = "./features/screen_objects/android/apk/ContactManager.apk"

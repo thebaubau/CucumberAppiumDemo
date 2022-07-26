@@ -4,8 +4,7 @@ require 'minitest/assertions'
 require 'minitest/autorun'
 
 # Base class for all screen objects
-class TestBaseScreen < Appium::Driver
-
+class BaseScreen < Appium::Driver
   def initialize(*opts)
     super
   end

@@ -1,7 +1,6 @@
 require 'appium_lib'
-require 'appium_lib/driver'
-require 'cucumber/ast'
-require 'rspec/expectations'
+require 'appium_lib_core'
+require 'cucumber'
 
 class AppiumWorld
 end
@@ -13,7 +12,7 @@ World do
 end
 
 Before do
-  @screen ||= TestBaseScreen.new(caps)
+  @screen ||= BaseScreen.new(caps)
   @screen.start_driver
   Appium.promote_appium_methods AppiumWorld
 end

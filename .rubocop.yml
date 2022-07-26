@@ -1,8 +1,8 @@
 Metrics/LineLength:
   Max: 120
 
-Layout/EndOfLine:
-  EnforcedStyle: lf
-
 Style/GlobalVars:
   Enabled: false
+
+Layout/EndOfLine:
+  Enabled: False

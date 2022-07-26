@@ -1,8 +1,6 @@
 source 'https://www.rubygems.org'
-
-gem 'appium_console', require: false
-gem 'appium_lib'
+gem 'appium_console'
+gem 'appium_lib', '~> 12.0', '>= 12.0.1'
 gem 'cucumber'
-gem 'httpclient'
-gem 'rspec-expectations'
-gem 'rubocop', '~> 0.49.1', require: false
+gem 'eventmachine', '1.2.7', git: 'https://github.com/eventmachine/eventmachine.git', tag: 'v1.2.7'
+gem 'rubocop', '~> 0.64.0'
